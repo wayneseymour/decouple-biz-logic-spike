@@ -54,5 +54,4 @@ function share(iterable) {
         [Symbol.asyncIterator]() { return this }
     }
 }
-
 consume(main(produce()))
