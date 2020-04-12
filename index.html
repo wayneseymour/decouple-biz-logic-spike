@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>async-generators-res/decouple-biz-logic-spike</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .draggable {
+            position: absolute;
+            cursor: pointer;
+            box-shadow: 0px 1px 3px 0;
+            width: 80px;
+            height: 80px;
+            background: white;
+            color: #5af;
+            font-size: 21px;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #workbench {
+            position:fixed;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            background: white;
+        }
+
+
+        .draggable:nth-child(odd) { top:30px; }
+        .draggable:nth-child(even) { top:150px; }
+        .draggable:nth-child(-n+2) { left:30px; }
+        .draggable:nth-last-child(-n+2) { left:150px; }
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+<div id="workbench">
+    <div class="draggable"><i class="fa fa-2x fa-plane"></i></div>
+    <div class="draggable"><i class="fa fa-2x fa-motorcycle"></i></div>
+    <div class="draggable"><i class="fa fa-2x fa-car"></i></div>
+    <div class="draggable"><i class="fa fa-2x fa-rocket"></i></div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
